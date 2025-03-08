@@ -1,0 +1,36 @@
+* {
+  text-decoration: none;
+}
+.navbar {
+  background-color: beige;
+  font-family: playfair display, serif;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navdiv li {
+  list-style: none;
+  display: inline-block;
+}
+.navdiv li a {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 25px;
+}
+.navdiv li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+body {
+  background: url(/img/young-man-seen-programming-software-code-his-laptop-sleek-home-office.jpg);
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  z-index: -1;
+  top: 60px;
+}
