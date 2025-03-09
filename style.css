@@ -1,36 +1,166 @@
 * {
-  text-decoration: none;
+    text-decoration: none;
+  }
+
+ 
+  .navbar {
+    font-family: playfair display, serif;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navdiv li {
+    list-style: none;
+    display: inline-block;
+  }
+  .navdiv li a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+    transition: 0.5s;
+  }
+  .navdiv li a:hover {
+    color: blue;
+  }
+
+  .hero_section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .hero_section h1{
+    font-size: 30px;
+  }
+
+  .hero_section p{
+    font-size: 20px;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .content img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+    left: 50px;
+    bottom: 100px;
+  }
+  
+  .img_content {
+    max-width: 55%;
+    font-size: 18px;
+    line-height: 1.6;
+    position: relative;
+    right: 120px;
+    padding: 50px;
+    background-color: black;
+    opacity: 0.9;
+    border-radius: 35px;
+  }
+
+  .img_content p{
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .content img {
+      max-width: 80%;
+    }
+  
+    .img_content {
+      max-width: 90%;
+    }
+  }
+
+
+  .cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 30px;
 }
-.navbar {
-  background-color: beige;
-  font-family: playfair display, serif;
-  padding-right: 15px;
-  padding-left: 15px;
+
+.hd_cards h1{
+  text-align: center;
 }
-.navdiv {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+.card {
+    width: 300px;
+    height: 250px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.navdiv li {
-  list-style: none;
-  display: inline-block;
+
+.card h3 {
+    font-size: 20px;
+    color: #333;
 }
-.navdiv li a {
-  color: black;
-  font-size: 18px;
-  font-weight: bold;
-  margin-right: 25px;
+
+.card p {
+    font-size: 18px;
+    color: #555;
+    flex-grow: 1;
 }
-.navdiv li a:hover {
-  color: black;
-  text-decoration: underline;
+
+.card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
-body {
-  background: url(/img/young-man-seen-programming-software-code-his-laptop-sleek-home-office.jpg);
-  margin: 0;
-  padding: 0;
-  background-size: cover;
-  z-index: -1;
-  top: 60px;
+
+.card button:hover {
+    background-color: #0056b3;
 }
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  width: 100%;
+  position: relative;
+  top: 80px;
+  right: 10px;
+}
+
+
+
+
+

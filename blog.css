@@ -1,0 +1,14 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    width: 100%;
+    position: relative;
+    top: 80px;
+    right: 10px;
+  }
